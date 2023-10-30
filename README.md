@@ -82,4 +82,5 @@ This project uses the following dependencies:
 To install the Rust dependencies, add them to your `Cargo.toml` file and run `cargo build`.
 
 
+### 📊 Video Tutorial
 
