@@ -4,8 +4,6 @@
 [![format](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/actions/workflows/format.yml)
 
 
-
-
 IDS706_DataEngineering_BarbaraFlores_Project2
 
 
@@ -22,7 +20,7 @@ In particular, the [world-small.csv](https://raw.githubusercontent.com/sejdemyr/
 
 - The variable `gdppcap08` represents the GDP per Capita values for countries in the year 2008.
 
-## 🌳 Directory Tree
+### 🌳 Directory Tree
 This repository includes the following directory and file structure:
 
 ```bash
@@ -45,8 +43,10 @@ This repository includes the following directory and file structure:
     └── update.rs
 ```
 
-- `src/`: This folder contains the Rust application source code.
-- `data/`: Here you can find the CSV database file.
+- [`src/`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main/src): This folder contains the Rust application source code with CRUD operations.
+- [`data/`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main/src) : Here you can find the CSV database file with input data.
+- [`images/`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main/images): In this directory, you'll discover visual aids, examples of program usage, and tutorials to help you better understand and utilize the functionality of the Rust CLI application. Feel free to explore these images for practical guidance.
+
 
 
 #### User Instructions
