@@ -1,25 +1,23 @@
-rust-version:
-	@echo "Rust command-line utility versions:"
-	rustc --version 			#rust compiler
-	cargo --version 			#rust package manager
-	rustfmt --version			#rust code formatter
-	rustup --version			#rust toolchain manager
-	clippy-driver --version		#rust linter
-
-format:
-	cargo fmt --quiet
-
-lint:
-	cargo clippy --quiet
+build:
+    cargo build
 
 test:
-	cargo test --quiet
+    cargo test
 
 run:
-	cargo run
+    cargo run
 
-release:
-	cargo build --release
+clean:
+    cargo clean
 
-all: format lint test run
+format:
+    cargo fmt
 
+lint:
+    cargo clippy
+
+docker-build:
+    docker build -t my-rust-app .
+
+docker-run:
+    docker run my-rust-app
