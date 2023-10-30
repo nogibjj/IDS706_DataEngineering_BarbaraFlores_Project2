@@ -45,9 +45,8 @@ This repository includes the following directory and file structure:
     └── update.rs
 ```
 
-- [`src/`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main/src): This folder contains the Rust application source code with CRUD operations.
-- [`data/`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main/src) : Here you can find the CSV database file with input data.
-- [`images/`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main/images): In this directory, you'll discover visual aids, examples of program usage, and tutorials to help you better understand and utilize the functionality of the Rust CLI application. 
+The project comprises a Rust command-line application that interacts with an SQLite database, offering essential CRUD functionality. The CREATE operation involves database generation from a CSV source, while the UPDATE operation transforms specific data. For data retrieval, the READ operation executes diverse queries, and the DELETE operation handles database removal. These operations collectively facilitate data management and manipulation, demonstrating the versatility of the Rust CLI application.
+
 
 
 #### User Instructions
