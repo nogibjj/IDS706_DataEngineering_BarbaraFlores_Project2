@@ -44,7 +44,7 @@ This repository includes the following directory and file structure:
     ├── read.rs
     └── update.rs
 ```
-### CRUD Operations
+###  🔧CRUD Operations
 
 The project is a Rust command-line application designed for seamless interaction with an SQLite database, offering essential CRUD functionality. It empowers users to efficiently manage and manipulate data, showcasing the versatility of this Rust CLI application. This functionality can be broken down into four key operations: CREATE, UPDATE, READ, and DELETE. Here's a closer look at what each of these operations entails:
 
@@ -61,7 +61,7 @@ The READ operation, defined in the read::query function, performs queries on the
 The DELETE operation, managed by the delete::delete_database function, is responsible for deleting the SQLite database file. It waits for a duration before performing the deletion. If the database file exists, it is removed.
 
 
-#### User Instructions
+### 📚User Instructions
 
 1. Clone this repository:
    Go to the [repository page](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/), then click on "Use this template," and then "Create New Repository."
