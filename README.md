@@ -89,16 +89,19 @@ cargo --version
 ```
 ![Step 2: Clone the repository](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Step02.png)
 
+5. Install Dependencies:
+The dependencies for this project are:
+- `rusqlite` = "0.25.2"
+- `prettytable` = "0.10.0"
+- `csv = "1.3"`
+These dependencies are already specified in our `Cargo.toml` file, so to install them, you simply need to execute:
 
-5. **Dependencies:**
-   
-- rusqlite = "0.25.2"
-- prettytable = "0.10.0"
-- csv = "1.3"
-The project's dependencies are already defined in the Cargo.toml file, including rusqlite, prettytable, and csv. Users do not need to install them separately. When building the project using cargo build, Cargo will automatically fetch and manage the required dependencies.
+   ```bash
+   cargo build
+   ```
 
 
-5. Build, Run, and Use the Rust CLI Application:
+5. To install the Rust dependencies, Build, Run, and Use the Rust CLI Application:
    - Navigate to the root directory of your cloned repository within your Codespace.
    - Use the following commands to build and run the Rust CLI application:
      ```bash
@@ -122,7 +125,6 @@ This project uses the following dependencies:
 - `predicates`: For testing command-line output.
 
 
-To install the Rust dependencies, add them to your `Cargo.toml` file and run `cargo build`.
 
 
 
