@@ -20,6 +20,9 @@ verificar que esten instalados
 rustc --version
 cargo --version
 
+cargo build
+cargo run
+
 ## 📂 Rewrite a Python Script in Rust
 
 This project involves rewriting an existing Python data processing script in the Rust programming language. The goal is to assess the improvements in terms of speed and resource usage achieved by moving from Python to Rust. The scripts are designed to process data from a SQLite database and display the results.
