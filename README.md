@@ -69,6 +69,8 @@ Make sure you have Rust installed on your system, using:
 rustc --version
 cargo --version
 ```
+![Step 2: Clone the repository](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Step02.png)
+
 
 
 ### Dependencies
