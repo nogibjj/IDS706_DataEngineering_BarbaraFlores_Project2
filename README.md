@@ -8,40 +8,13 @@
 
 IDS706_DataEngineering_BarbaraFlores_Project2
 
-copiar clonar
-instalar rust 
 
-stala Rust y Cargo: Asegúrate de que Rust y Cargo estén instalados en tu sistema. Puedes descargar e instalar Rust desde el sitio web oficial de Rust (https://www.rust-lang.org/tools/install). Durante la instalación, se configurará la ruta de búsqueda para que los comandos de Rust, como cargo, estén disponibles globalmente.
+## 📂 Rust CLI Binary with SQLite
+
+The objective of this project is to develop a Rust command-line application (CLI) that interacts with an SQLite database, following a set of evaluation criteria totaling 100 points. This includes creating and manipulating the database, utilizing GitHub Copilot, generating an optimized binary as a GitHub Actions artifact, creating a clear and concise README.md, properly configuring GitHub Actions to test, build, and lint the Rust code, and producing a high-quality demonstration video explaining and showcasing the project's functionality.
 
 
 
-1
-
-To configure your current shell, run:
-source "$HOME/.cargo/env"
-verificar que esten instalados
-
-rustc --version
-cargo --version
-
-cargo build
-cargo run
-
-## 📂 Rewrite a Python Script in Rust
-
-This project involves rewriting an existing Python data processing script in the Rust programming language. The goal is to assess the improvements in terms of speed and resource usage achieved by moving from Python to Rust. The scripts are designed to process data from a SQLite database and display the results.
-
-### 1. Take an existing Python script for data processing
-We will use the Python script [main.py](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Miniproject8/blob/main/python/main.py) from previous tasks, which connects to an SQLite database named [WorldSmallDB.db](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Miniproject8/blob/main/data/WorldSmallDB.db) and executes various SQL queries. The primary purpose is to summarize the database and provide descriptive statistics about it.
-
-### 2. Rewrite it in Rust
-Starting from the previous script and utilizing the Copilot tool, the code was rewritten in the Rust language. To accomplish this, the environment was set up with Rust's package manager, Cargo, and necessary dependencies were added. The Python code was then translated and adapted into Rust code [main.rs](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Miniproject8/blob/main/rust/main.rs). The performance was monitored, and a comparison report was generated to assess any improvements in execution speed and resource efficiency. The primary goal was to maintain functionality while optimizing the code's performance.
-
-### 3. Highlight improvements in speed and resource usage
-In the following images, we provide a comparative analysis of the Python script [main.py](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Miniproject8/blob/main/python/main.py) and its Rust counterpart [main.rs](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Miniproject8/blob/main/rust/main.rs). The analysis focuses on execution speed and resource usage.
-
-#### Python
-![Python Performance](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Miniproject8/main/images/python_performance.png)
 
 #### Rust
 ![Rust Performance](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Miniproject8/main/images/rust_performance.png)
