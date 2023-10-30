@@ -44,7 +44,7 @@ This repository includes the following directory and file structure:
     ├── read.rs
     └── update.rs
 ```
-###  🔧CRUD Operations
+### 🔧CRUD Operations
 
 The project is a Rust command-line application designed for seamless interaction with an SQLite database, offering essential CRUD functionality. It empowers users to efficiently manage and manipulate data, showcasing the versatility of this Rust CLI application. This functionality can be broken down into four key operations: CREATE, UPDATE, READ, and DELETE. Here's a closer look at what each of these operations entails:
 
@@ -61,13 +61,19 @@ The READ operation, defined in the read::query function, performs queries on the
 The DELETE operation, managed by the delete::delete_database function, is responsible for deleting the SQLite database file. It waits for a duration before performing the deletion. If the database file exists, it is removed.
 
 
-### 🚀Optimized Rust Binary
+### 🚀 Optimized Rust Binary
+
+This project goes beyond a basic Rust command-line application. As part of the optimization process, an optimized Rust binary is generated as a GitHub Actions artifact. This optimized binary ensures efficient execution and performance, making it ideal for a wide range of applications. Users can download the optimized binary directly from the GitHub Actions artifacts, ensuring they have a high-performing application ready for use.
+
 The following process is used to generate an optimized Rust binary:
 
-The cargo build --release command is used to build the Rust binary in release mode.
-The strip command is used to remove unnecessary symbols from the Rust binary.
-The upx command is used to compress the Rust binary.
-The optimized Rust binary is generated as a GitHub Actions artifact that can be downloaded.
+1. The `cargo build --release` command is used to build the Rust binary in release mode.
+2. The `Makefile` is edited to include optimization settings and additional build configurations.
+3. The `Cargo.toml` file is edited to include necessary dependencies and configurations for optimization.
+4. The optimized Rust binary is generated as a GitHub Actions artifact that can be downloaded.
+
+Later in the instructions section, we will provide details on how to use it.
+
 
 ### 📚User Instructions
 
