@@ -20,30 +20,6 @@ In particular, the [world-small.csv](https://raw.githubusercontent.com/sejdemyr/
 
 - The variable `gdppcap08` represents the GDP per Capita values for countries in the year 2008.
 
-### 🌳 Directory Tree
-This repository includes the following directory and file structure:
-
-```bash
-.
-├── Cargo.lock
-├── Cargo.toml
-├── Dockerfile
-├── LICENSE
-├── Makefile
-├── README.md
-├── data
-│   └── WorldSmall.csv
-├── images
-│   ├── Step01.png
-│   └── Step02.png
-├── setup.sh
-└── src
-    ├── create.rs
-    ├── delete.rs
-    ├── main.rs
-    ├── read.rs
-    └── update.rs
-```
 ### 🔧CRUD Operations
 
 The project is a Rust command-line application designed for seamless interaction with an SQLite database, offering essential CRUD functionality. It empowers users to efficiently manage and manipulate data, showcasing the versatility of this Rust CLI application. This functionality can be broken down into four key operations: CREATE, UPDATE, READ, and DELETE. Here's a closer look at what each of these operations entails:
