@@ -113,7 +113,7 @@ Now you're ready to use the project!
 ### 📷 Execution Examples
 
 Here are some examples of what you can expect when you run this project:
-![Screen Shot 2023-10-30 at 08 51 54](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/assets/143648839/ad2dcb2c-b081-4803-9afe-7e0602171ae9)
+![Example](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Example.png)
 
 
 
