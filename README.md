@@ -90,7 +90,8 @@ cargo --version
 ![Step 2: Clone the repository](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Step02.png)
 
 
-5. Dependencies:
+5. **Dependencies:**
+   
 - rusqlite = "0.25.2"
 - prettytable = "0.10.0"
 - csv = "1.3"
