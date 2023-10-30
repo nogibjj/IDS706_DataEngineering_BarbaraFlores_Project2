@@ -67,12 +67,14 @@ By leveraging GitHub Copilot's capabilities, the development process was streaml
 ### 📚User Instructions
 
 1. Clone this repository:
+   
    Go to the [repository page](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main), then click on "Use this template," and then "Create New Repository."
 
 ![Step 1: Clone the repository](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Step01.png)
 
 
 2. Create a Codespace
+   
 3. Install Rust in Codespace using:
 
 ```bash
@@ -82,6 +84,7 @@ source "$HOME/.cargo/env"
 ```
 
 4. Make sure you have Rust installed on your system, using:
+   
 ```bash
 rustc --version
 cargo --version
@@ -89,6 +92,7 @@ cargo --version
 ![Step 2: Clone the repository](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Step02.png)
 
 5. Install Dependencies:
+   
 The dependencies for this project are:
 - `rusqlite` = "0.25.2"
 - `prettytable` = "0.10.0"
@@ -100,12 +104,14 @@ These dependencies are already specified in our `Cargo.toml` file, so to install
    ```
 
 6. Execute the project:
+   
    - Use the following command to run the application:
 
    ```bash
    cargo run
    ```
 7. Building the Binary
+   
    To build the optimized Rust binary for better performance, use the following command:
 
    ```bash
