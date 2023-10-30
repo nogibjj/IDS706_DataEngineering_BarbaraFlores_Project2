@@ -11,7 +11,11 @@ IDS706_DataEngineering_BarbaraFlores_Project2
 
 ## 📂 Rust CLI Binary with SQLite
 
-The objective of this project is to develop a Rust command-line application (CLI) that interacts with an SQLite database. This involves creating and manipulating the database, using GitHub Copilot, generating an optimized binary as a GitHub Actions artifact, creating a clear and concise README.md, properly configuring GitHub Actions to test, build, and lint the Rust code, and producing a high-quality demonstration video explaining and showcasing the project's functionality.
+The objective of this project is to develop a Rust command-line application (CLI) that interacts with an SQLite database. This involves creating and manipulating the database, using GitHub Copilot, generating an optimized binary as a GitHub Actions artifact, properly configuring GitHub Actions to test, build, and lint the Rust code, and producing a high-quality demonstration video explaining and showcasing the project's functionality.
+
+
+
+
 
 
 
