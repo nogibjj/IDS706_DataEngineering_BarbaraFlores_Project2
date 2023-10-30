@@ -17,11 +17,11 @@ jobs:
         with:
           toolchain: stable
       - name: Build
-        uses: ./.github/workflows/build.yml  
+        run: cargo build
       - name: Format Check
-        uses: ./.github/workflows/format.yml  
+        run: cargo fmt -- --check
       - name: Test
-        uses: ./.github/workflows/test.yml 
+        run: cargo test
       - name: Lint
         run: cargo clippy -- -D warnings
       - name: Deploy
