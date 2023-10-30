@@ -98,36 +98,21 @@ These dependencies are already specified in our `Cargo.toml` file, so to install
 
    ```bash
    cargo build
+   ``
+
+6. Execute the project:
+   - Use the following command to run the application:
+
+   ```bash
+   cargo run
    ```
 
-
-5. To install the Rust dependencies, Build, Run, and Use the Rust CLI Application:
-   - Navigate to the root directory of your cloned repository within your Codespace.
-   - Use the following commands to build and run the Rust CLI application:
-     ```bash
-     cargo build
-     cargo run
-     ```
-   - Follow the on-screen instructions and explore the functionality of the Rust CLI application.
+Now you're ready to use the project!
 
 
-These instructions will guide users on how to build, run, and use the Rust CLI application within their Codespace.
+### 📷 Execution Examples
 
-
-### Dependencies
-
-This project uses the following dependencies:
-
-- `rusqlite`: For SQLite database interaction.
-- `csv`: To work with CSV files.
-- `reqwest`: To make HTTP requests.
-- `assert_cmd`: For testing command-line applications.
-- `predicates`: For testing command-line output.
-
-
-
-
-
+Here are some examples of what you can expect when you run this project:
 ![Screen Shot 2023-10-30 at 08 51 54](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/assets/143648839/ad2dcb2c-b081-4803-9afe-7e0602171ae9)
 
 
