@@ -40,8 +40,6 @@ The project is a Rust command-line application designed for seamless interaction
   The DELETE operation, managed by the [delete.rs](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/src/delete.rs) file, is responsible for deleting the SQLite database file. It waits for a duration before performing the deletion. If the database file exists, it is removed.
 
 
-
-
 ### 🚀 Optimized Rust Binary
 
 This project goes beyond a basic Rust command-line application. As part of the optimization process, an optimized Rust binary is generated as a GitHub Actions artifact. This optimized binary ensures efficient execution and performance, making it ideal for a wide range of applications. Users can download the optimized binary directly from the GitHub Actions artifacts, ensuring they have a high-performing application ready for use.
@@ -90,6 +88,13 @@ rustc --version
 cargo --version
 ```
 ![Step 2: Clone the repository](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Step02.png)
+
+
+5. Dependencies:
+- rusqlite = "0.25.2"
+- prettytable = "0.10.0"
+- csv = "1.3"
+The project's dependencies are already defined in the Cargo.toml file, including rusqlite, prettytable, and csv. Users do not need to install them separately. When building the project using cargo build, Cargo will automatically fetch and manage the required dependencies.
 
 
 5. Build, Run, and Use the Rust CLI Application:
