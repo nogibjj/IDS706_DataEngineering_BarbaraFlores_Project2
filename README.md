@@ -52,6 +52,8 @@ This repository includes the following directory and file structure:
 #### User Instructions
 
 1. Clone this repository
+![Step01](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Step01.png)
+
 2. Create a Codespace
 3. Install Rust using:
 
