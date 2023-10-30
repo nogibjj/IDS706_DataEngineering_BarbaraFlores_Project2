@@ -1,5 +1,5 @@
 format:
-	#cargo fmt --quiet
+	cargo fmt
 
 release:
 	cargo build --release
