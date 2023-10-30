@@ -1,6 +1,20 @@
 [![CI](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Miniproject8/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Miniproject8/actions/workflows/cicd.yml)
 
+
+
 IDS706_DataEngineering_BarbaraFlores_Project2
+
+copiar clonar
+instalar rust 
+
+stala Rust y Cargo: Asegúrate de que Rust y Cargo estén instalados en tu sistema. Puedes descargar e instalar Rust desde el sitio web oficial de Rust (https://www.rust-lang.org/tools/install). Durante la instalación, se configurará la ruta de búsqueda para que los comandos de Rust, como cargo, estén disponibles globalmente.
+
+verificar que esten instalados
+
+rustc --version
+cargo --version
+
+
 ## 📂 Rewrite a Python Script in Rust
 
 This project involves rewriting an existing Python data processing script in the Rust programming language. The goal is to assess the improvements in terms of speed and resource usage achieved by moving from Python to Rust. The scripts are designed to process data from a SQLite database and display the results.
