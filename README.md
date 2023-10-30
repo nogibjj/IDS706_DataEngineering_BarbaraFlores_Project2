@@ -45,14 +45,15 @@ This repository includes the following directory and file structure:
 
 - [`src/`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main/src): This folder contains the Rust application source code with CRUD operations.
 - [`data/`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main/src) : Here you can find the CSV database file with input data.
-- [`images/`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main/images): In this directory, you'll discover visual aids, examples of program usage, and tutorials to help you better understand and utilize the functionality of the Rust CLI application. Feel free to explore these images for practical guidance.
-
+- [`images/`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main/images): In this directory, you'll discover visual aids, examples of program usage, and tutorials to help you better understand and utilize the functionality of the Rust CLI application. 
 
 
 #### User Instructions
 
-1. Clone this repository
-![Step01](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Step01.png)
+1. Clone this repository: Go to the [repository page](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/), then click on "Use this template," and then "Create New Repository."
+
+![Step 1: Clone the repository](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Step01.png)
+
 
 2. Create a Codespace
 3. Install Rust using:
