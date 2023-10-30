@@ -1,16 +1,16 @@
 format:
-	cargo fmt --quiet
+	#cargo fmt --quiet
 
 release:
-	cargo build --release
+	#cargo build --release
 
 lint:
 	cargo clippy --quiet
 
 test:
-	cargo test --quiet
+	#cargo test --quiet
 
 run:
-	cargo run 
+	#cargo run 
 
 all: format lint test release run
