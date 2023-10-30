@@ -64,13 +64,25 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 ```
 
-Make sure you have Rust installed on your system, using:
+4. Make sure you have Rust installed on your system, using:
 ```bash
 rustc --version
 cargo --version
 ```
 ![Step 2: Clone the repository](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Step02.png)
 
+
+5. Build, Run, and Use the Rust CLI Application:
+   - Navigate to the root directory of your cloned repository within your Codespace.
+   - Use the following commands to build and run the Rust CLI application:
+     ```bash
+     cargo build
+     cargo run
+     ```
+   - Follow the on-screen instructions and explore the functionality of the Rust CLI application.
+
+
+These instructions will guide users on how to build, run, and use the Rust CLI application within their Codespace.
 
 
 ### Dependencies
