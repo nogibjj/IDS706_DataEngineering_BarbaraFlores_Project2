@@ -48,16 +48,16 @@ This repository includes the following directory and file structure:
 
 The project is a Rust command-line application designed for seamless interaction with an SQLite database, offering essential CRUD functionality. It empowers users to efficiently manage and manipulate data, showcasing the versatility of this Rust CLI application. This functionality can be broken down into four key operations: CREATE, UPDATE, READ, and DELETE. Here's a closer look at what each of these operations entails:
 
-**CREATE**
+- **CREATE**
 In the main.rs file, the CREATE operation involves creating a database from a CSV file. It accomplishes this by using the create::create_database_from_csv function. This function connects to an SQLite database, creates a table, and then reads data from the provided CSV file, inserting it into the table.
 
-**UPDATE**
+- **UPDATE**
 The UPDATE operation is carried out using the update::update_table function. It transforms the database table, converting specific columns, such as 'country' and 'region,' to uppercase.
 
-**READ**
+- **READ**
 The READ operation, defined in the read::query function, performs queries on the database. In the project, two sample queries are demonstrated. The first query selects a random sample of five records from the database and displays them. The second query groups records by the 'region' column, counting the number of records in each region, and then displays the results.
 
-**DELETE**
+- **DELETE**
 The DELETE operation, managed by the delete::delete_database function, is responsible for deleting the SQLite database file. It waits for a duration before performing the deletion. If the database file exists, it is removed.
 
 
