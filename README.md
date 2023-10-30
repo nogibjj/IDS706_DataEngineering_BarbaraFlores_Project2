@@ -14,7 +14,7 @@ IDS706_DataEngineering_BarbaraFlores_Project2
 The objective of this project is to develop a Rust command-line application (CLI) that interacts with an SQLite database. This involves creating and manipulating the database, using GitHub Copilot, generating an optimized binary as a GitHub Actions artifact, properly configuring GitHub Actions to test, build, and lint the Rust code, and producing a high-quality demonstration video explaining and showcasing the project's functionality.
 
 
-### 📂 Database
+### 📊 Database
 
 In particular, the [world-small.csv](https://raw.githubusercontent.com/sejdemyr/sejdemyr.github.io/master/r-tutorials/basics/data/world-small.csv) database was used, which was employed in the `"Practical Data Science"` class taught by Nick Eubank. This database contains information about some countries, their regions, and their values for `Polity IV` and `gdppcap08`.
 
@@ -23,7 +23,23 @@ In particular, the [world-small.csv](https://raw.githubusercontent.com/sejdemyr/
 - The variable `gdppcap08` represents the GDP per Capita values for countries in the year 2008.
 
 
-#### Rust Code
+### Prerequisites
+
+- Rust programming environment: Make sure you have Rust installed on your system.
+
+### Dependencies
+
+This project uses the following dependencies:
+
+- `rusqlite`: For SQLite database interaction.
+- `csv`: To work with CSV files.
+- `reqwest`: To make HTTP requests.
+- `assert_cmd`: For testing command-line applications.
+- `predicates`: For testing command-line output.
+- `libc`: For C standard library bindings.
+- `rust-bert`: For natural language processing (NLP).
+
+To install the Rust dependencies, add them to your `Cargo.toml` file and run `cargo build`.
 
 
 
