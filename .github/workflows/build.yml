@@ -7,12 +7,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions-rs/toolchain@v1
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Rust toolchain
+        uses: actions-rs/toolchain@v1
         with:
           toolchain: stable
-          profile: minimal
-          components: clippy, rustfmt
-          override: true
-      - name: Run Release
-        run: make release
+
+      - name: Build Rust binary in release mode
+        run: cargo build --release
+
+      - name: Upload binary as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: my-binary
+          path: target/release/main

@@ -9,7 +9,7 @@ IDS706_DataEngineering_BarbaraFlores_Project2
 
 ## 📂 Rust CLI Binary with SQLite
 
-The objective of this project is to develop a Rust command-line application (CLI) that interacts with an SQLite database. This involves creating and manipulating the database, using GitHub Copilot, generating an optimized binary as a GitHub Actions artifact, properly configuring GitHub Actions to test, build, and lint the Rust code, and producing a high-quality demonstration video explaining and showcasing the project's functionality.
+The objective of this project is to develop a Rust command-line application (CLI) that interacts with an SQLite database. This involves creating and manipulating the database, using GitHub Copilot, generating an optimized binary as a GitHub Actions artifact, properly configuring GitHub Actions to test, build, and lint the Rust code, and producing a demonstration video explaining and showcasing the project's functionality.
 
 
 ### 📊 Database
@@ -34,6 +34,8 @@ This repository includes the following directory and file structure:
 ├── data
 │   └── WorldSmall.csv
 ├── images
+│   ├── Step01.png
+│   └── Step02.png
 ├── setup.sh
 └── src
     ├── create.rs
@@ -42,15 +44,35 @@ This repository includes the following directory and file structure:
     ├── read.rs
     └── update.rs
 ```
+###  🔧CRUD Operations
 
-- [`src/`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main/src): This folder contains the Rust application source code with CRUD operations.
-- [`data/`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main/src) : Here you can find the CSV database file with input data.
-- [`images/`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main/images): In this directory, you'll discover visual aids, examples of program usage, and tutorials to help you better understand and utilize the functionality of the Rust CLI application. 
+The project is a Rust command-line application designed for seamless interaction with an SQLite database, offering essential CRUD functionality. It empowers users to efficiently manage and manipulate data, showcasing the versatility of this Rust CLI application. This functionality can be broken down into four key operations: CREATE, UPDATE, READ, and DELETE. Here's a closer look at what each of these operations entails:
+
+- **CREATE**
+In the main.rs file, the CREATE operation involves creating a database from a CSV file. It accomplishes this by using the create::create_database_from_csv function. This function connects to an SQLite database, creates a table, and then reads data from the provided CSV file, inserting it into the table.
+
+- **UPDATE**
+The UPDATE operation is carried out using the update::update_table function. It transforms the database table, converting specific columns, such as 'country' and 'region,' to uppercase.
+
+- **READ**
+The READ operation, defined in the read::query function, performs queries on the database. In the project, two sample queries are demonstrated. The first query selects a random sample of five records from the database and displays them. The second query groups records by the 'region' column, counting the number of records in each region, and then displays the results.
+
+- **DELETE**
+The DELETE operation, managed by the delete::delete_database function, is responsible for deleting the SQLite database file. It waits for a duration before performing the deletion. If the database file exists, it is removed.
 
 
-#### User Instructions
+### 🚀Optimized Rust Binary
+The following process is used to generate an optimized Rust binary:
 
-1. Clone this repository: Go to the [repository page](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/), then click on "Use this template," and then "Create New Repository."
+The cargo build --release command is used to build the Rust binary in release mode.
+The strip command is used to remove unnecessary symbols from the Rust binary.
+The upx command is used to compress the Rust binary.
+The optimized Rust binary is generated as a GitHub Actions artifact that can be downloaded.
+
+### 📚User Instructions
+
+1. Clone this repository:
+   Go to the [repository page](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/), then click on "Use this template," and then "Create New Repository."
 
 ![Step 1: Clone the repository](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Step01.png)
 
@@ -98,21 +120,7 @@ This project uses the following dependencies:
 
 To install the Rust dependencies, add them to your `Cargo.toml` file and run `cargo build`.
 
-### CRUD Operations
 
-**CREATE**
-In the main.rs file, the CREATE operation involves creating a database from a CSV file. It accomplishes this by using the create::create_database_from_csv function. This function connects to an SQLite database, creates a table, and then reads data from the provided CSV file, inserting it into the table.
-
-**UPDATE**
-The UPDATE operation is carried out using the update::update_table function. It transforms the database table, converting specific columns, such as 'country' and 'region,' to uppercase.
-
-**READ**
-The READ operation, defined in the read::query function, performs queries on the database. In the project, two sample queries are demonstrated. The first query selects a random sample of five records from the database and displays them. The second query groups records by the 'region' column, counting the number of records in each region, and then displays the results.
-
-**DELETE**
-The DELETE operation, managed by the delete::delete_database function, is responsible for deleting the SQLite database file. It waits for a duration before performing the deletion. If the database file exists, it is removed.
-
-You can use these descriptions to further enhance your README, providing a clear understanding of each CRUD operation within your Rust CLI application.
 
 ![Screen Shot 2023-10-30 at 08 51 54](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/assets/143648839/ad2dcb2c-b081-4803-9afe-7e0602171ae9)
 
