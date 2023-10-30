@@ -11,4 +11,4 @@ prettytable = "0.10.0"
 
 [[bin]]
 name = "main"
-path = "rust/main.rs"
+path = "src/main.rs"
