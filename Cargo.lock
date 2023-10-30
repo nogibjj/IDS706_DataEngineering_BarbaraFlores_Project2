@@ -3,15 +3,6 @@
 version = 3
 
 [[package]]
-name = "IDS706_DataEngineering_BarbaraFlores_Miniproject8"
-version = "0.1.0"
-dependencies = [
- "prettytable",
- "reqwest",
- "rusqlite",
-]
-
-[[package]]
 name = "addr2line"
 version = "0.21.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -418,6 +409,16 @@ checksum = "7d20d6b07bfbc108882d88ed8e37d39636dcc260e15e30c45e6ba089610b917c"
 dependencies = [
  "unicode-bidi",
  "unicode-normalization",
+]
+
+[[package]]
+name = "ids706_data_engineering_barbara_flores_project2"
+version = "0.1.0"
+dependencies = [
+ "csv",
+ "prettytable",
+ "reqwest",
+ "rusqlite",
 ]
 
 [[package]]

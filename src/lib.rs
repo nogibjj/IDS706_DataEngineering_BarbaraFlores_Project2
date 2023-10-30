@@ -6,9 +6,18 @@ use rusqlite::Connection;
 use prettytable::{Table, Row, Cell};
 
 
+
+// src/lib.rs
+
+pub fn my_library_function() {
+    println!("¡Hola desde la biblioteca!");
+}
+
+
+
 // QUERY
 
-fn print_table(_cursor: &rusqlite::Statement, data: Vec<Vec<String>>) {
+pub fn print_table(_cursor: &rusqlite::Statement, data: Vec<Vec<String>>) {
     let mut table = Table::new();
     for row in data.iter() {
         let cells: Vec<Cell> = row.iter().map(|value| Cell::new(value)).collect();
