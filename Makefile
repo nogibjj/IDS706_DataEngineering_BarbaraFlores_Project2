@@ -5,7 +5,7 @@ release:
 	cargo build --release
 
 lint:
-	cargo clippy --quiet
+	cargo clippy
 
 test:
 	#cargo test --quiet
