@@ -51,7 +51,6 @@ The following process is used to generate an optimized Rust binary:
 - The `Cargo.toml` file is edited to include necessary dependencies and configurations for optimization.
 - The optimized Rust binary is generated as a GitHub Actions artifact that can be downloaded.
 
-Later in the instructions section, we will provide details on how to use it.
 
 ### 🤖 GitHub Copilot Assistance
 GitHub Copilot, an AI-powered coding assistant, played a significant role in the development of this Rust CLI application. It assisted in generating code snippets, suggesting best practices, and improving the overall code quality. Specifically, it provided valuable support in the following areas:
