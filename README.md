@@ -105,7 +105,14 @@ These dependencies are already specified in our `Cargo.toml` file, so to install
    ```bash
    cargo run
    ```
+7. Building the Binary
+   To build the optimized Rust binary for better performance, use the following command:
 
+   ```bash
+   bash cargo build --release
+   ```
+   Building in release mode optimizes the binary for performance, making it more efficient and suitable for production use.
+   
 Now you're ready to use the project!
 
 
