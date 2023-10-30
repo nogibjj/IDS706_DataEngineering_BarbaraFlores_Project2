@@ -56,7 +56,7 @@ This repository includes the following directory and file structure:
 
 
 2. Create a Codespace
-3. Install Rust using:
+3. Install Rust in Codespace using:
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
