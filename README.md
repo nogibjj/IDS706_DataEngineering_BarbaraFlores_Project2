@@ -98,7 +98,7 @@ These dependencies are already specified in our `Cargo.toml` file, so to install
 
    ```bash
    cargo build
-   ``
+   ```
 
 6. Execute the project:
    - Use the following command to run the application:
