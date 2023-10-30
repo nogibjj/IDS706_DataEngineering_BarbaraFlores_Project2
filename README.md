@@ -97,6 +97,7 @@ The DELETE operation, managed by the delete::delete_database function, is respon
 
 You can use these descriptions to further enhance your README, providing a clear understanding of each CRUD operation within your Rust CLI application.
 
+![Screen Shot 2023-10-30 at 08 51 54](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/assets/143648839/ad2dcb2c-b081-4803-9afe-7e0602171ae9)
 
 ### 📊 Video Tutorial
 
