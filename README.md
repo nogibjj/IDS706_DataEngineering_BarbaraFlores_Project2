@@ -9,16 +9,16 @@ instalar rust
 
 stala Rust y Cargo: Asegúrate de que Rust y Cargo estén instalados en tu sistema. Puedes descargar e instalar Rust desde el sitio web oficial de Rust (https://www.rust-lang.org/tools/install). Durante la instalación, se configurará la ruta de búsqueda para que los comandos de Rust, como cargo, estén disponibles globalmente.
 
-verificar que esten instalados
 
-rustc --version
-cargo --version
 
 1
 
 To configure your current shell, run:
 source "$HOME/.cargo/env"
+verificar que esten instalados
 
+rustc --version
+cargo --version
 
 ## 📂 Rewrite a Python Script in Rust
 
