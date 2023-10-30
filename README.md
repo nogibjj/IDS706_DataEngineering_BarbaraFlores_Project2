@@ -14,6 +14,11 @@ verificar que esten instalados
 rustc --version
 cargo --version
 
+1
+
+To configure your current shell, run:
+source "$HOME/.cargo/env"
+
 
 ## 📂 Rewrite a Python Script in Rust
 
