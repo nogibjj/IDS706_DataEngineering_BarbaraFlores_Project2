@@ -78,7 +78,7 @@ Later in the instructions section, we will provide details on how to use it.
 ### 📚User Instructions
 
 1. Clone this repository:
-   Go to the [repository page](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/), then click on "Use this template," and then "Create New Repository."
+   Go to the [repository page](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/tree/main), then click on "Use this template," and then "Create New Repository."
 
 ![Step 1: Clone the repository](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Step01.png)
 
