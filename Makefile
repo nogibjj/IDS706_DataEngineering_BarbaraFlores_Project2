@@ -2,7 +2,7 @@ format:
 	#cargo fmt --quiet
 
 release:
-	#cargo build --release
+	cargo build --release
 
 lint:
 	cargo clippy --quiet
