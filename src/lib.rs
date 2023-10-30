@@ -1,9 +1,9 @@
+// src/lib.rs
 extern crate rusqlite;
 extern crate prettytable;
 
 use rusqlite::Connection;
-use std::time::Instant;
-use prettytable::{Cell, Row, Table};
+use prettytable::{Table, Row, Cell};
 
 fn print_table(_cursor: &rusqlite::Statement, data: Vec<Vec<String>>) {
     let mut table = Table::new();
@@ -14,12 +14,12 @@ fn print_table(_cursor: &rusqlite::Statement, data: Vec<Vec<String>>) {
     table.printstd();
 }
 
-fn query() -> Result<(), rusqlite::Error> {
+pub fn query() -> Result<(), rusqlite::Error> {
     let db_path = "data/WorldSmallDB.db";
     let conn = Connection::open(db_path)?;
 
     // Query 1
-    let start_time = Instant::now();
+
     let mut cursor = conn.prepare("SELECT * FROM WorldSmallDB ORDER BY RANDOM() LIMIT 5")?;
     let rows = cursor
         .query_map([], |row| {
@@ -30,14 +30,14 @@ fn query() -> Result<(), rusqlite::Error> {
             Ok(values)
         })?
         .collect::<Result<Vec<Vec<String>>, rusqlite::Error>>()?;
-    let elapsed_time = start_time.elapsed();
+
 
     println!("\nLet's quickly review our database. Let's take a sample of how it is constructed.");
     print_table(&cursor, rows);
-    println!("Query completed in {:.2?} seconds", elapsed_time);
+
 
     // Query 2
-    let start_time = Instant::now();
+
     let mut cursor = conn.prepare("SELECT region, COUNT(*) AS N FROM WorldSmallDB GROUP BY region")?;
     let rows = cursor
         .query_map([], |row| {
@@ -46,11 +46,10 @@ fn query() -> Result<(), rusqlite::Error> {
             Ok((region, count))
         })?
         .collect::<Result<Vec<(String, i64)>, rusqlite::Error>>()?;
-    let elapsed_time = start_time.elapsed();
+
 
     println!("\nHow many records per continent does our database have?");
     print_table(&cursor, rows.iter().map(|(r, c)| vec![r.clone(), c.to_string()]).collect());
-    println!("Query completed in {:.2?} seconds", elapsed_time);
 
     Ok(())
 }

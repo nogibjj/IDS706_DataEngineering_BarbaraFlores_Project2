@@ -1,7 +1,9 @@
-mod mylib; // Importa el módulo mylib
+mod lib;
 
 fn main() {
-    if let Err(err) = mylib::query() {
+    // Query
+    println!("Querying data...");
+    if let Err(err) = lib::query() {
         eprintln!("Error: {:?}", err);
     }
 }
