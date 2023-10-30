@@ -1,23 +1,16 @@
-build:
-    cargo build
-
-test:
-    cargo test
-
-run:
-    cargo run
-
-clean:
-    cargo clean
-
 format:
-    cargo fmt
+	cargo fmt --quiet
+
+release:
+	cargo build --release
 
 lint:
-    cargo clippy
+	cargo clippy --quiet
 
-docker-build:
-    docker build -t my-rust-app .
+test:
+	cargo test --quiet
 
-docker-run:
-    docker run my-rust-app
+run:
+	cargo run 
+
+all: format lint test release run
