@@ -34,6 +34,8 @@ This repository includes the following directory and file structure:
 ├── data
 │   └── WorldSmall.csv
 ├── images
+│   ├── Step01.png
+│   └── Step02.png
 ├── setup.sh
 └── src
     ├── create.rs
