@@ -24,17 +24,19 @@ In particular, the [world-small.csv](https://raw.githubusercontent.com/sejdemyr/
 
 The project is a Rust command-line application designed for seamless interaction with an SQLite database, offering essential CRUD functionality. It empowers users to efficiently manage and manipulate data, showcasing the versatility of this Rust CLI application. The central hub for coordinating these operations is the [`main.rs`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/src/main.rs) file, which orchestrates the CREATE, UPDATE, READ, and DELETE operations. Here's a closer look at what each of these operations entails:
 
+
 - **CREATE**
-  In the [`create.rs`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/src/create.rs) file, the CREATE operation involves creating a database from a CSV file. It accomplishes this by using the `create::create_database_from_csv` function, which is called from the [`main.rs`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/src/main.rs) file. This function connects to an SQLite database, creates a table, and then reads data from the provided CSV file, inserting it into the table.
+  In the [create.rs](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/src/create.rs) file, the CREATE operation involves creating a database from a CSV file. It accomplishes this by using the `create::create_database_from_csv` function. This function connects to an SQLite database, creates a table, and then reads data from the provided CSV file, inserting it into the table.
 
 - **UPDATE**
-  The UPDATE operation is carried out using the [`update.rs`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/src/update.rs) file, with the [`main.rs`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/src/main.rs) file playing a central role in coordinating this operation. It calls the `update::update_table` function, which transforms the database table, converting specific columns, such as 'country' and 'region,' to uppercase.
+  The UPDATE operation is carried out using the [update.rs](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/src/update.rs) file, which uses the `update::update_table` function. It transforms the database table, converting specific columns, such as 'country' and 'region,' to uppercase.
 
 - **READ**
-  The READ operation, defined in the [`read.rs`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/src/read.rs) file, is invoked from the [`main.rs`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/src/main.rs) file. This operation performs queries on the database. In the project, two sample queries are demonstrated. The first query selects a random sample of five records from the database and displays them. The second query groups records by the 'region' column, counting the number of records in each region, and then displays the results.
+  The READ operation, defined in the [read.rs](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/src/read.rs) file, performs queries on the database. In the project, two sample queries are demonstrated. The first query selects a random sample of five records from the database and displays them. The second query groups records by the 'region' column, counting the number of records in each region, and then displays the results.
 
 - **DELETE**
-  The DELETE operation, managed by the [`delete.rs`](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/src/delete.rs) file, is responsible for deleting the SQLite database file. It waits for a duration before performing the deletion. If the database file exists, it is removed.
+  The DELETE operation, managed by the [delete.rs](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/src/delete.rs) file, is responsible for deleting the SQLite database file. It waits for a duration before performing the deletion. If the database file exists, it is removed.
+
 
 
 
