@@ -1,17 +1,14 @@
 [package]
-name = "ids706_data_engineering_barbara_flores_project2"
+name = "IDS706_DataEngineering_BarbaraFlores_Miniproject8"
 version = "0.1.0"
-edition = "2018"
+edition = "2021"
 
-# ...
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
 rusqlite = "0.25.2"
 prettytable = "0.10.0"
-reqwest = "0.11"
-csv = "1.0"
 
 [[bin]]
 name = "main"
 path = "src/main.rs"
-
