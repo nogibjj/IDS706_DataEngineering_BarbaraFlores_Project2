@@ -61,6 +61,14 @@ The READ operation, defined in the read::query function, performs queries on the
 The DELETE operation, managed by the delete::delete_database function, is responsible for deleting the SQLite database file. It waits for a duration before performing the deletion. If the database file exists, it is removed.
 
 
+### 🚀Optimized Rust Binary
+The following process is used to generate an optimized Rust binary:
+
+The cargo build --release command is used to build the Rust binary in release mode.
+The strip command is used to remove unnecessary symbols from the Rust binary.
+The upx command is used to compress the Rust binary.
+The optimized Rust binary is generated as a GitHub Actions artifact that can be downloaded.
+
 ### 📚User Instructions
 
 1. Clone this repository:
