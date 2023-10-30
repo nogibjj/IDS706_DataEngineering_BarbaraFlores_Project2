@@ -1,5 +1,12 @@
 name: Rust Format Check
 runs-on: ubuntu-latest
+
 steps:
-  - name: Format
+  - name: Checkout code
+    uses: actions/checkout@v2
+  - name: Set up Rust
+    uses: actions-rs/toolchain@v1
+    with:
+      toolchain: stable
+  - name: Format Check
     run: cargo fmt -- --check
