@@ -1,0 +1,5 @@
+name: Rust Format Check
+runs-on: ubuntu-latest
+steps:
+  - name: Format
+    run: cargo fmt -- --check
