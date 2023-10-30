@@ -22,6 +22,28 @@ In particular, the [world-small.csv](https://raw.githubusercontent.com/sejdemyr/
 
 - The variable `gdppcap08` represents the GDP per Capita values for countries in the year 2008.
 
+## 🌳 Directory Tree
+This repository includes the following directory and file structure:
+
+```bash
+.
+├── Cargo.lock
+├── Cargo.toml
+├── Dockerfile
+├── LICENSE
+├── Makefile
+├── README.md
+├── data
+│   └── WorldSmall.csv
+├── images
+├── setup.sh
+└── src
+    ├── create.rs
+    ├── delete.rs
+    ├── main.rs
+    ├── read.rs
+    └── update.rs
+```
 
 ### Prerequisites
 
