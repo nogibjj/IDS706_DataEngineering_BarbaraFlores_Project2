@@ -5,6 +5,9 @@ extern crate prettytable;
 use rusqlite::Connection;
 use prettytable::{Table, Row, Cell};
 
+
+// QUERY
+
 fn print_table(_cursor: &rusqlite::Statement, data: Vec<Vec<String>>) {
     let mut table = Table::new();
     for row in data.iter() {

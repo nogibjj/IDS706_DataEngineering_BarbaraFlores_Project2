@@ -5,5 +5,6 @@ fn main() {
     println!("Querying data...");
     if let Err(err) = lib::query() {
         eprintln!("Error: {:?}", err);
+        
     }
 }

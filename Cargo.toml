@@ -8,6 +8,7 @@ edition = "2021"
 [dependencies]
 rusqlite = "0.25.2"
 prettytable = "0.10.0"
+reqwest = "0.11"
 
 [[bin]]
 name = "main"
