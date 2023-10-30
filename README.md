@@ -36,8 +36,7 @@ This project uses the following dependencies:
 - `reqwest`: To make HTTP requests.
 - `assert_cmd`: For testing command-line applications.
 - `predicates`: For testing command-line output.
-- `libc`: For C standard library bindings.
-- `rust-bert`: For natural language processing (NLP).
+
 
 To install the Rust dependencies, add them to your `Cargo.toml` file and run `cargo build`.
 
