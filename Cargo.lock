@@ -6,6 +6,7 @@ version = 3
 name = "IDS706_DataEngineering_BarbaraFlores_Miniproject8"
 version = "0.1.0"
 dependencies = [
+ "csv",
  "prettytable",
  "rusqlite",
 ]
