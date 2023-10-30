@@ -20,7 +20,7 @@ In particular, the [world-small.csv](https://raw.githubusercontent.com/sejdemyr/
 
 - The variable `gdppcap08` represents the GDP per Capita values for countries in the year 2008.
 
-Incorporated within this project is a robust SQLite database, at the core of showcasing and exemplifying the versatility of CRUD (Create, Read, Update, Delete) operations. Originally, the project commenced with a [CSV data source](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/data/WorldSmall.csv), which was meticulously transformed and proficiently managed through this powerful database.
+At the core of this project lies a robust SQLite database, instrumental in showcasing the versatility of CRUD (Create, Read, Update, Delete) operations. The project initially began with a [CSV data source](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/blob/main/data/WorldSmall.csv), which was meticulously transformed and efficiently managed using this powerful database.
 
 ### 🔧 CRUD Operations
 
