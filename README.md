@@ -45,9 +45,28 @@ This repository includes the following directory and file structure:
     └── update.rs
 ```
 
-### Prerequisites
+- `src/`: This folder contains the Rust application source code.
+- `data/`: Here you can find the CSV database file.
 
-- Rust programming environment: Make sure you have Rust installed on your system.
+
+#### User Instructions
+
+1. Clone this repository
+2. Create a Codespace
+3. Install Rust using:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+1
+source "$HOME/.cargo/env"
+```
+
+Make sure you have Rust installed on your system, using:
+```bash
+rustc --version
+cargo --version
+```
+
 
 ### Dependencies
 
