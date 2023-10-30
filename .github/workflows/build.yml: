@@ -1,0 +1,5 @@
+name: Rust Build
+runs-on: ubuntu-latest
+steps:
+  - name: Build
+    run: cargo build
