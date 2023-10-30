@@ -44,14 +44,27 @@ This repository includes the following directory and file structure:
     ├── read.rs
     └── update.rs
 ```
+### CRUD Operations
 
-The project comprises a Rust command-line application that interacts with an SQLite database, offering essential CRUD functionality. The CREATE operation involves database generation from a CSV source, while the UPDATE operation transforms specific data. For data retrieval, the READ operation executes diverse queries, and the DELETE operation handles database removal. These operations collectively facilitate data management and manipulation, demonstrating the versatility of the Rust CLI application.
+The project is a Rust command-line application designed for seamless interaction with an SQLite database, offering essential CRUD functionality. It empowers users to efficiently manage and manipulate data, showcasing the versatility of this Rust CLI application. This functionality can be broken down into four key operations: CREATE, UPDATE, READ, and DELETE. Here's a closer look at what each of these operations entails:
 
+**CREATE**
+In the main.rs file, the CREATE operation involves creating a database from a CSV file. It accomplishes this by using the create::create_database_from_csv function. This function connects to an SQLite database, creates a table, and then reads data from the provided CSV file, inserting it into the table.
+
+**UPDATE**
+The UPDATE operation is carried out using the update::update_table function. It transforms the database table, converting specific columns, such as 'country' and 'region,' to uppercase.
+
+**READ**
+The READ operation, defined in the read::query function, performs queries on the database. In the project, two sample queries are demonstrated. The first query selects a random sample of five records from the database and displays them. The second query groups records by the 'region' column, counting the number of records in each region, and then displays the results.
+
+**DELETE**
+The DELETE operation, managed by the delete::delete_database function, is responsible for deleting the SQLite database file. It waits for a duration before performing the deletion. If the database file exists, it is removed.
 
 
 #### User Instructions
 
-1. Clone this repository: Go to the [repository page](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/), then click on "Use this template," and then "Create New Repository."
+1. Clone this repository:
+   Go to the [repository page](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/), then click on "Use this template," and then "Create New Repository."
 
 ![Step 1: Clone the repository](https://raw.githubusercontent.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/main/images/Step01.png)
 
@@ -99,21 +112,7 @@ This project uses the following dependencies:
 
 To install the Rust dependencies, add them to your `Cargo.toml` file and run `cargo build`.
 
-### CRUD Operations
 
-**CREATE**
-In the main.rs file, the CREATE operation involves creating a database from a CSV file. It accomplishes this by using the create::create_database_from_csv function. This function connects to an SQLite database, creates a table, and then reads data from the provided CSV file, inserting it into the table.
-
-**UPDATE**
-The UPDATE operation is carried out using the update::update_table function. It transforms the database table, converting specific columns, such as 'country' and 'region,' to uppercase.
-
-**READ**
-The READ operation, defined in the read::query function, performs queries on the database. In the project, two sample queries are demonstrated. The first query selects a random sample of five records from the database and displays them. The second query groups records by the 'region' column, counting the number of records in each region, and then displays the results.
-
-**DELETE**
-The DELETE operation, managed by the delete::delete_database function, is responsible for deleting the SQLite database file. It waits for a duration before performing the deletion. If the database file exists, it is removed.
-
-You can use these descriptions to further enhance your README, providing a clear understanding of each CRUD operation within your Rust CLI application.
 
 ![Screen Shot 2023-10-30 at 08 51 54](https://github.com/nogibjj/IDS706_DataEngineering_BarbaraFlores_Project2/assets/143648839/ad2dcb2c-b081-4803-9afe-7e0602171ae9)
 
