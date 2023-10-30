@@ -9,6 +9,11 @@ pub fn update_table(db_file: &str) -> Result<()> {
         "UPDATE my_table SET country = UPPER(country)",
         params![] // There are no parameters for this query
     )?;
-    
+
+    conn.execute(
+        "UPDATE my_table SET region = UPPER(region)",
+        params![] // There are no parameters for this query
+    )?;
+
     Ok(())
 }
