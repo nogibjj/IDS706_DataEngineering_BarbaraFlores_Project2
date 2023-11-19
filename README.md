@@ -129,6 +129,6 @@ Here are some examples of what you can expect when you run this project:
 
 
 
-### 📊 Video Tutorial
+### 🎥 Video Tutorial
 The following [YouTube link](https://youtu.be/7IdvxX5F508) shows a clear, concise walkthrough and demonstration of the CLI binary
 
